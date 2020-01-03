@@ -20,32 +20,46 @@ const trial_info = {
 };
 
 const trial_info_2 = {
-    ratingScale_ins: [
+	ratingScale_ins: [
         {
-            question: 'If you were to evaluate your knowledge on a 7-point scale about how certain facts work, how useful would you find the instructions you just read?',
-            optionLeft: "Completely useful",
-            optionRight: "Completely unhelpful"
+            question: 'How clear are the instructions you just read?',
+            optionLeft: "Not at all clear",
+            optionRight: "Extremely clear"
         }
 	],
-	ratingScale_ins_rep: [
+	ratingScale_ins_pos: [
         {
-            question: 'How clear and understandable do you find the instructions you just read?',
-            optionLeft: "Extremely positive",
-            optionRight: "Extremely negative"
+            question: 'Do think that this article provides enough information to understand what a cryptocurrency is, how it is created, and by which means it is exchanged?',
+            optionLeft: "Not at all useful",
+            optionRight: "Extremely useful"
+        }
+	],
+	ratingScale_ins_neg: [
+        {
+            question: 'Do think that this article provides enough information to understand what a cryptocurrency is, how it is created, and by which means it is exchanged?',
+            optionLeft: "Not at all useful",
+            optionRight: "Extremely useful"
         }
 	],
 	ratingScale_neg: [
         {
-            question: 'How positive or negative do you find the information you just read?',
-            optionLeft: "Extremely positive",
-            optionRight: "Extremely negative"
+            question: 'How positive or negative do you find the news you just read?',
+            optionLeft: "Completely negative",
+            optionRight: "Completely positive"
         }
     ],
 	ratingScale_pos: [
         {
             question: 'How positive or negative do you find the information you just read?',
-            optionLeft: "Extremely positive",
-            optionRight: "Extremely negative"
+            optionLeft: "Completely negative",
+            optionRight: "Completely positive"
+        }
+    ],
+	ratingScale_usefulness: [
+        {
+            question: 'If you were to evaluate your own knowledge on how the cryptocurrency trading system works, how useful would be the instructions you read in the first part of this survey?',
+            optionLeft: "Not at all useful",
+            optionRight: "Extremely useful"
         }
     ]
 };

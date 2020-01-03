@@ -23,13 +23,16 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `This is a short pilot test part of the experiment I will conduct for my master thesis.
+  text: `Thank you for taking part in this experiment.
             <br />
             <br />
-			If you are willing to collaborate with me, please read carefully the instructions in the next pages and answer the questions.
+			As part of my thesis research, I'm conducting a series of online surveys about social events. This is a short pilot test that will take approximately 5-10 minutes.
+			<br />
+            <br />
+			The data from this experiment will be used for scientific purposes only and will be stored anonymously. 
             <br />
             <br />
-			Should you have any doubt or suggestion, please send me and email: <strong>zzuluagar@gmail.com</strong>`,
+			Should you have further questions or suggestions, please send me and email: <strong>zzuluagar@gmail.com</strong>`,
   buttonText: 'begin'
 });
 
@@ -38,30 +41,23 @@ const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'General Instructions',
-  text: `First, you will read a set of instructions to use a 7-point rating scale.
+  text: `To start with, I will ask you to evaluate a set of instructions to use a 7-point rating scale.
             <br />
-            <br />
-            Please read carefully each part and evaluate in the end how clear and concise were the instructions for you.`,
+            <br />Please read each section carefully and follow the instructions to assess how adequate and clear the information presented is.`,
   buttonText: 'go to scale instructions'
 });
 
 const explanation_ins_1 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'explanation_ins_1',
-  title: 'General Instructions',
-  text: `If you were to evaluate your knowledge of certain topics, you would probably come along with judgments as "" or "I definitely don't know about that". 
+  title: 'Self-Understanding Scale',
+  text: `If you were to evaluate your knowledge on how and why certain things work, you would probably come along with judgments as "I certainly know that" or "I definitely have no idea". Judgments as such are commonly asked for on rating scales ranging from less to more understanding. 
             <br />
             <br />
-			Judgments as such might conceivable be expressed in discrete scales ranging from vague to full comprehension. 
+			The following instructions attempt to clarify what different scores on a 7-point scale of this kind are supposed to reflect. Please read each explanation level in order to understand how to use this rating scale, illustrated here with an example of the mechanism behind global warming.
             <br />
             <br />
-			This introduction try to make clear what different scores on a scale of understanding are supposed to reflect, in this case, a 7-point scale where 1 means “vague understanding” and 7 means “complete understanding”. 
-            <br />
-            <br />
-			In the next screens, I will present you with examples of different levels of understanding using the example of how climate change works and how human activity has contributed to it. 
-            <br />
-            <br />
-            Read carefully each step and evaluate how clear and concise you found the instructions.`,
+            Have in mind that a 7 in this scale implies deep and detailed knowledge on how global warming occurs, 1 implies very little knowledge, and 4 a level in the middle.`,
   buttonText: 'next'
 });
 
@@ -69,15 +65,12 @@ const explanation_ins_2 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'explanation_ins_2',
   title: 'General Instructions',
-  text: `<strong>Level 7 of knowledge:</strong> A person with level 7 of knowledge has a deeply and detailed knowledge of how climate change occurs and what role human activity has had on accelerate it.  
+  text: `<strong>Level 7 of knowledge:</strong> A person with level 7 of knowledge has a deeply and detailed knowledge of how global warming occurs and what  role human activity has played on accelerate it. For instance, she will know that Earht's normal temperature is a natural process that follows from the Earth’s absorption of sunlight. As the Earth transforms sunlight’s energy into infrared light, greenhouse gases (methane, carbon dioxide, etc.) in the air absorb that energy causing the atmosphere to heat up. 
             <br />
             <br />
-			For instance, she will know that climate change is a natural process that follows from the Earth’s absorption of sunlight that in turn reflects as infrared light. 
+			She will also know that the warm atmosphere emits more infrared light causing it to be re-absorbed several times before eventually returns to space, keeping the Earth warm. The longer the infrared light stays in the atmosphere, the warmer the water and ground will get. 
             <br />
-            <br />
-			She will also know that greenhouses in the atmosphere absorb the infrared light causing it to heat up. As the light is being absorbed the atmosphere produces more infrared light that tends to be reabsorbed and stays longer around before abandon the atmosphere to outer space keeping the Earth warm. 
-            <br />
-            <br />She also understands that the longer the infrared light stays in the atmosphere, the warmer the atmosphere, water, and ground will get. She would also know that since the industrial age, human activity has helped to broadly increase the greenhouse gases release to the atmosphere slowing down the time infrared light hangs around and therefore contributing to global climate change.`,
+            <br />It will be clear for her that since the industrial age, human activities like energy, food, and goods production has increased the amount of methane and carbon dioxide released to the atmosphere. Such increase causes an extra absorption of infrared light that slows the rate at which sunlight’s energy escapes to space. As more infrared light is captured, the average temperature rises contributing to the global warming.`,
   buttonText: 'next'
 });
 
@@ -86,12 +79,10 @@ const explanation_ins_3 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'explanation_ins_3',
   title: 'General Instructions',
-  text: `<strong>Level 4 of knowledge:</strong> A person with level 4 of knowledge has a general idea about how climate change occurs and how human activity affects it, although without a deep or detailed understanding. 
+  text: `<strong>Level 4 of knowledge:</strong> A person with level 4 of knowledge has a general idea of how climate change occurs and how human activities affect it, although without deep or detailed understanding. For instance, she might know that climate change occurs by means of greenhouse gases that somehow absorb solar energy, heating up the Earth.
             <br />
             <br />
-			For instance, she might know that climate change occurs at the atmosphere by means of greenhouse gases that somehow absorb energy keeping the Earth warm. She might also know that the more greenhouse gases are release into the atmosphere, the warmer the Earth will get. 
-            <br />
-            <br />She knows that human activity boosts this process causing an even higher temperature on Earth, although without understanding of the mechanism behind it.`,
+			She might also know that the bigger the amount of greenhouse gases released to the atmosphere, the warmer the Earth will get. It would be clear to her that human activity boosts this process causing higher temperatures.`,
   buttonText: 'next'
 });
 
@@ -100,33 +91,41 @@ const explanation_ins_4 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'explanation_ins_4',
   title: 'General Instructions',
-  text: `<strong>Level 1 of knowledge:</strong> A person with level 1 of knowledge would probably have a very superficial understanding of climate change and the impact of human activity on it. She might only know that human activity causes climate change but the general mechanism or the agents involved in it are unknown to her.`,
+  text: `<strong>Level 1 of knowledge:</strong> A person with level 1 of knowledge would probably have a very superficial understanding of global warming. She might know that fossil fuels cause the Earth's temperature to increase but how this occurs and by which means (e.g., infrared light, greenhouse gases) is unknown to her.`,
   buttonText: 'next'
 });
 
+const instructions_news = magpieViews.view_generator("instructions", {
+  trials: 1,
+  name: 'instructions_news',
+  title: 'General Instructions',
+  text: `For the second part of this survey, I will present you with two different news on the topic "cryptocurrencies". After you have read each article, you will be asked to rate how positive or negative you found it.`,
+  buttonText: 'go to articles'
+});
 
 const negative_news = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'negative_news',
   title: 'Bitcoin buster? A Greater Fool’s Gold',
-  text: `After a decade since the first cryptocurrency–digital tokens known as cryptos for short– saw the light of day, more than 2,000 different cryptos have brought investors into a fool’s gold fever.
+  text: `After a decade since the first cryptocurrency–digital tokens known as cryptos for short–saw the light of day, more than 2,000 different cryptos have brought investors into a fool’s gold fever.
             <br />
             <br />
-            Cryptos have investors in the grip of a gold rush fever, with billions being traded every day. This volatility may be a speculative trader's friend, but it has reinforced cryptos' reputation for being high-risk investments for the adrenalin-fuelled "get rich quick" brigade. 
+            Cryptos have investors in the grip of a gold rush fever, with billions being traded every day and prices soaring and crashing alarmingly. This volatility may be a speculative trader's friend, but it has reinforced cryptos' reputation for being high-risk investments for the adrenalin-fuelled "get rich quick" brigade. 
 			<br />
             <br />
-            Since their launch, prices of most cryptos have fluctuated dramatically, raising concerns among experts and state authorities. So, a growing number of crypto start-ups have been forced to develop alternatives as the so-called stablecoins–digital tokens pegged to traditional fiat currencies such as the US dollar or the British pound–in unsuccessful attempts to stabilize the fluctuation. However, warnings and skeptical views persist. 
+            Since their launch, this unpredictable fluctuation has raised concerns among experts and state authorities. So, a growing number of crypto start-ups have been forced to develop alternatives as the so-called stablecoins–digital tokens pegged to traditional fiat currencies such as the US dollar or the British pound–in unsuccessful attempts to stabilize the fluctuation. However, warnings and skeptical views persist. 
 			<br />
             <br />
 			"Despite their lack of understanding, cryptoasset owners are often looking for ways to 'get rich quick' citing friends, acquaintances and social media influencers as key motivations for buying cryptoassets," said Christopher Woolard, of the Financial Conduct Authority (FCA). "Cryptoassets are complex, volatile products - consumers investing in them should be prepared to lose all of their money," he added.
             <br />
             <br />
-			The stability of a currency is vital for the valuation of assets attached to it. For cryptos, assets valuated in these currencies experience dramatic devaluations in briefly periods of time, which can put at risk an already fragile monetary system. That goes without mention the transaction system on which cryptos rely, which currently works at a rate of 13 transactions per second, far behind the 200,000 transactions per second just Visa showed in 2018. 
+			The stability of a currency is vital to value assets attached to it. For cryptos, assets set in these currencies experience dramatic devaluations in briefly periods of time, which can put at risk an already fragile monetary system. That goes without mention the transaction system on which cryptos rely, which currently works at a rate of 13 transactions per second, far behind the 200,000 transactions per second just Visa showed in 2018. 
             <br />
             <br />
 			The world of digital currency has also little regulatory oversight and a history of hacking threats, and minimal consumer protection. Last February for instance, the untimely death of Gerald Cotten, head of the biggest Canadian cryptocurrency exchanges – Quadriga CX – shook investors with a loss of C$ 180m ($135m). Since all the transaction information was encrypted in his laptop–which has not yet been cracked–, his decease vanished the investors’ access to their cryptos hosted in the platform. The meltdown of Quadriga CX left thousands of investors with the uncertainty of what will happen with their money. 
             <br />
-            <br />There is even less reason to trust software developed by small teams of programmers who hope both to become insanely rich and to circumvent all efforts by governments to control them. So long as ordinary people can expect to make their fortunes overnight, proliferation of cryptos seems unlikely to drop off in the years to come.`,
+            <br />
+			There is even less reason to trust software developed by small teams of programmers who hope both to become insanely rich and to circumvent all efforts by governments to control them. So long as ordinary people can expect to make their fortunes overnight, proliferation of cryptos seems unlikely to drop off in the years to come.`,
   buttonText: 'next'
 });
 
@@ -134,24 +133,25 @@ const positive_news = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'positive_news',
   title: 'Bitcoin buster? The Future of Global Economy',
-  text: `After a decade since the first cryptocurrency–digital tokens known as cryptos for short– saw the light of day, more than 2,000 different cryptos are being traded on about 190 exchange platforms around the world.
+  text: `After a decade since the first cryptocurrency–digital tokens known as cryptos for short–saw the light of day, more than 2,000 different cryptos are being traded on about 190 exchange platforms around the world.
             <br />
             <br />
 			Cryptos have provided investors with an attractive method of decentralized currencies, with billions being traded every day. And most importantly, they are not affected by volatile politics or global banking crises. 
             <br />
             <br />
-			Since their launch, every crypto has seen increased its value, sometimes by a 1000-fold. Fluctuations in price now seem to be a problem of the past thanks to a growing number of crypto start-ups, which are developing alternatives as the so-called stablecoins. These are digital tokens pegged to traditional fiat currencies such as the US dollar, the British pound or the Japanese yen. That is the case of the crypto finance company Circle, which has just launched months age a new token called USD Coin.
+			Since their launch, every crypto has seen increased its value, sometimes by a 1000 times. Price fluctuations now seem to be a problem of the past thanks to a growing number of crypto start-ups that are developing alternatives known as stablecoins, digital tokens pegged to traditional fiat currencies such as the US dollar, British pound or Japanese yen. As expressed by the crypto finance company Circle, stable coins have increased investor confidence in cryptos.
             <br />
             <br />
 			"Imagine a US dollar coin that you can make payments with, use on crypto networks, or use in smart contracts to pay dividends, but which you can convert back to fiat currency at any time," explains Circle chief executive Jeremy Allaire. "We're going to see a lot of businesses using tokens for revenue raising. And eventually central banks will want to do this," maintains Mr. Allaire. 
             <br />
             <br />
-			The stability of a currency is highly praised as it determines investment trust and acquisitive power. Most people in the sector agree that crypto's ability to act as a smart contract presents huge opportunities to "tokenise" physical assets. For cryptos, this has leaded to the tokenization of assets such as automobiles, industries and real state among others. In countries with unstable economies, cryptos have offered an alternative for people to participate in a reliable transaction system and value their assets on currencies readily available and more trustworthy than local ones.
+			The stability of a currency is highly praised as it impacts directly on the trust of investors and, consequently, acquisitive power. For cryptos, this has led to the tokenization of assets such as automobiles, companies and real state. Most people in the sector agree that crypto's ability to act as a smart contract presents huge opportunities to value physical assets. In countries with unstable economies, cryptos have offered an alternative for people to take part in a reliable transaction system and set their assets on currencies easily available and more reliable than those backed by local governments.
             <br />
             <br />
 			"Say I have a house in downtown Saigon worth $1m," says Kory Hoang, founder of Stably. "I could tokenise it and sell those tokens on the global crypto market. You could issue a billion pieces of your house if you wanted. Then people would start trading them, just like shares in a real estate investment trust. It gives investors around the world access to investment opportunities they never had before."
             <br />
-            <br />Work is still afoot. In the years to come, the challenges seem to improve already existent exchange platforms that can cope with bigger number of transactions. However, future looks promising for cryptos and their ever-improving update to the global economic system. Let us see what will happen.`,
+            <br />
+			Although work is still afoot, strategies as satablecoins show how adaptive is the crypto system, responding quickly to changes and investors' concerns. Future looks promising for cryptos setting them as a real update to the global economic system. Let us see what will happen.`,
   buttonText: 'next'
 });
 
@@ -233,6 +233,18 @@ const rating_scale_ins = magpieViews.view_generator("rating_scale",{
     data: trial_info_2.ratingScale_ins
 });
 
+const rating_scale_ins_pos = magpieViews.view_generator("rating_scale",{
+    trials: 1,
+    name: 'rating_scale_ins_pos',
+    data: trial_info_2.ratingScale_ins_pos
+});
+
+const rating_scale_ins_neg = magpieViews.view_generator("rating_scale",{
+    trials: 1,
+    name: 'rating_scale_ins_neg',
+    data: trial_info_2.ratingScale_ins_neg
+});
+
 const rating_scale_pos = magpieViews.view_generator("rating_scale",{
     trials: 1,
     name: 'rating_scale_pos',
@@ -243,4 +255,10 @@ const rating_scale_neg = magpieViews.view_generator("rating_scale",{
     trials: 1,
     name: 'rating_scale_neg',
     data: trial_info_2.ratingScale_neg
+});
+
+const rating_scale_use = magpieViews.view_generator("rating_scale",{
+    trials: 1,
+    name: 'rating_scale_use',
+    data: trial_info_2.ratingScale_usefulness
 });
