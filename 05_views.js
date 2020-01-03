@@ -65,7 +65,7 @@ const explanation_ins_2 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'explanation_ins_2',
   title: 'General Instructions',
-  text: `<strong>Level 7 of knowledge:</strong> A person with level 7 of knowledge has a deeply and detailed knowledge of how global warming occurs and what  role human activity has played on accelerate it. For instance, she will know that Earht's normal temperature is a natural process that follows from the Earth’s absorption of sunlight. As the Earth transforms sunlight’s energy into infrared light, greenhouse gases (methane, carbon dioxide, etc.) in the air absorb that energy causing the atmosphere to heat up. 
+  text: `<strong>Level 7 of knowledge:</strong> A person with level 7 of knowledge has a deeply and detailed knowledge of how global warming occurs and what  role human activity has played on accelerating it. For instance, she will know that Earth's normal temperature is a natural process that follows from the Earth’s absorption of sunlight. As the Earth transforms sunlight’s energy into infrared light, greenhouse gases (methane, carbon dioxide, etc.) in the air absorb that energy causing the atmosphere to heat up. 
             <br />
             <br />
 			She will also know that the warm atmosphere emits more infrared light causing it to be re-absorbed several times before eventually returns to space, keeping the Earth warm. The longer the infrared light stays in the atmosphere, the warmer the water and ground will get. 

@@ -57,7 +57,7 @@ const trial_info_2 = {
     ],
 	ratingScale_usefulness: [
         {
-            question: 'If you were to evaluate your own knowledge on how the cryptocurrency trading system works, how useful would be the instructions you read in the first part of this survey?',
+            question: 'If you were to evaluate your own knowledge on how the cryptocurrency trading system works on a 7-point scale of understanding similar to the one in the first part of this experiment, how useful would the global warming example be?',
             optionLeft: "Not at all useful",
             optionRight: "Extremely useful"
         }
