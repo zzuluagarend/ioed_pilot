@@ -29,14 +29,14 @@ const trial_info_2 = {
 	],
 	ratingScale_ins_pos: [
         {
-            question: 'Do think that this article provides enough information to understand what a cryptocurrency is, how it is created, and by which means it is exchanged?',
+            question: 'Do you think that this article provides enough information to understand what a cryptocurrency is, how it is created, and by which means it is exchanged?',
             optionLeft: "Not at all useful",
             optionRight: "Extremely useful"
         }
 	],
 	ratingScale_ins_neg: [
         {
-            question: 'Do think that this article provides enough information to understand what a cryptocurrency is, how it is created, and by which means it is exchanged?',
+            question: 'Do you think that this article provides enough information to understand what a cryptocurrency is, how it is created, and by which means it is exchanged?',
             optionLeft: "Not at all useful",
             optionRight: "Extremely useful"
         }
@@ -57,7 +57,7 @@ const trial_info_2 = {
     ],
 	ratingScale_usefulness: [
         {
-            question: 'If you were to evaluate your own knowledge on how the cryptocurrency trading system works on a 7-point scale of understanding similar to the one in the first part of this experiment, how useful would the global warming example be?',
+            question: "If you were to evaluate your own knowledge on how a different phenomenon works, let's say nuclear energy producition, on a 7-point scale of understanding similar to this, how useful would the global warming example be?",
             optionLeft: "Not at all useful",
             optionRight: "Extremely useful"
         }
